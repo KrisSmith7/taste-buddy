@@ -22,3 +22,11 @@ code {
   background-repeat: no-repeat;
   /* filter: brightness(75%) */
 }
+
+.form-input {
+  margin: 2px;
+  padding: 8px;
+  border-width: 2px;
+  border-radius: 4px;
+  font-size: large;
+}

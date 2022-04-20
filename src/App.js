@@ -9,9 +9,9 @@ function App() {
   return (
     <div>
     <Landing />
-    <SignIn  />
-    <Main />
-    <Favorites />
+    {/* <SignIn  /> */}
+    {/* <Main /> */}
+    {/* <Favorites /> */}
     <Footer />
     </div>
   );
