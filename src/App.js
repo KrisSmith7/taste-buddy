@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Landing from './pages/Landing';
 import SignIn from './pages/SignIn';
@@ -10,7 +9,7 @@ function App() {
   return (
     <div>
     <Landing />
-    <SignIn />
+    <SignIn  />
     <Main />
     <Favorites />
     <Footer />
