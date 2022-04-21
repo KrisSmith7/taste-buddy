@@ -3,8 +3,8 @@ import React from "react";
 function SignUpForm () {
     return (
         <>
-        <form id="signup" className="bg-rubyred flex flex-col items-center p-4 w-full">
-            <h1 className="py-2">Sign Up</h1>
+        <form id="signup" className="bg-rubyred flex flex-col items-center rounded-lg p-4 w-full">
+            <h1 className="py-4">Create New Account</h1>
             <input
                 className='form-input'
                 placeholder='Enter your email'
@@ -26,7 +26,7 @@ function SignUpForm () {
                 type='password'
                 id='newpassword'
             />
-            <button className='w-50 m-5 text-lg w-1/2' type='submit'>
+            <button className='mt-4 w-5/6 p-4 uppercase bg-gray-100 rounded-md' type='submit'>
                Submit
             </button>
         </form>

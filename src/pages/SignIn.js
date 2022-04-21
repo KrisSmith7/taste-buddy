@@ -1,47 +1,45 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import LoginForm from "./components/LoginForm";
 import SignUpForm from "./components/SignUpForm";
+import Switch from "./components/Switch";
 import Landing from "./Landing";
 
-function SignIn () {
-        
-    const [showAuth, setShowAuth] = useState (true);
+function SignIn() {
+
+    const [showAuth, setShowAuth] = useState(true);
     const handleClose = () => setShowAuth(false)
 
-    const [toggleAuth, setToggle] = useState (false);
-    const handleToggle = () => setToggle(state => !state)
- 
+    const [toggleAuth, setToggle] = useState(false);
+    const handleToggle = () => setToggle(value => !value)
+
     if (!showAuth) {
-        return (
-            <Landing/>
-        )
+        return (<Landing />)
     }
-        //   if (toggleAuth) {
-        //     console.log("sign in modal opened")
-        //     return ( "switching...")
-        //     }
-      
+
 
     return (
-        <div>
-  <div className="flex justify-evenly">
-      {" "}
-      <div className="w-full h-12">
-        <button onClick={ () => handleToggle(!toggleAuth)} className="appearance-none border-2 w-1/2 h-full checked:bg-brightorange/75" >
+        <div className="bg-gray-50 my-8 px-2">
+            <div className="flex justify-between py-4">
 
-        </button>
-      </div>
-  <button onClick={handleClose}>&times;</button>
-    </div>
-<div>
-{!toggleAuth && (
-<LoginForm />
-    )}
+                <Switch
+                    isOn={toggleAuth}
+                    onColor={toggleAuth ? '#D81E5B' : '#F0544F'}
+                    content={toggleAuth ? '< Login' : 'Sign Up >'}
+                    handleToggle={() => handleToggle(!toggleAuth)}
+                />
 
-{toggleAuth && (
-    <SignUpForm />)}
+                <button onClick={handleClose}>
+                    <span className="text-4xl font-bold text-rubyred">&times;</span>
+                </button>
+            </div>
+            <div className="pb-6">
+                {!toggleAuth && (
+                    <LoginForm />
+                )}
 
-</div>
+                {toggleAuth && (
+                    <SignUpForm />)}
+            </div>
         </div>
     )
 }

@@ -8,7 +8,8 @@ import Favorites from './pages/Favorites';
 function App() {
   return (
     <div>
-    <Landing />
+    {/* <Landing /> */}
+    <SignIn/>
     {/* <Main /> */}
     {/* <Favorites /> */}
     <Footer />

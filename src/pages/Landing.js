@@ -8,7 +8,7 @@ function Landing() {
  
           if (showAuth) {
             console.log("sign in modal opened")
-            return ( <SignIn /> )
+            return ( <SignIn show={true}/> )
             }
       
 
