@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../assets/css/switch.css'
 
 const Switch = ({isOn, handleToggle, onColor, content}) => {
   return (
