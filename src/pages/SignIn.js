@@ -5,10 +5,6 @@ import Switch from "./components/Switch";
 
 
 function SignIn() {
-
-    // const [showAuth, setShowAuth] = useState(true);
-    // const handleClose = () => setShowAuth(false)
-
     const [toggleAuth, setToggle] = useState(false);
     const handleToggle = () => setToggle(value => !value)
 
@@ -25,12 +21,8 @@ function SignIn() {
             </div>
           
             <div>
-                {!toggleAuth && (
-                    <LoginForm />
-                )}
-
-                {toggleAuth && (
-                    <SignUpForm />)}
+                {!toggleAuth && (<LoginForm />)}
+                {toggleAuth && (<SignUpForm />)}
             </div>
         </div>
     )
