@@ -3,7 +3,7 @@ import React from "react";
 function SignUpForm () {
     return (
         <>
-        <form id="signup" className="bg-rubyred flex flex-col items-center rounded-lg p-4 w-full">
+        <form id="signup" className="bg-rubyred flex flex-col items-center rounded-lg p-4 w-full h-full">
             <h1 className="py-4">Create New Account</h1>
             <input
                 className='form-input'

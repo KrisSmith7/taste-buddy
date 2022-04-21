@@ -2,19 +2,15 @@ import React, { useState } from "react";
 import LoginForm from "./components/LoginForm";
 import SignUpForm from "./components/SignUpForm";
 import Switch from "./components/Switch";
-import Landing from "./Landing";
 
-function SignIn(close) {
 
-    const [showAuth, setShowAuth] = useState(true);
-    const handleClose = () => setShowAuth(false)
+function SignIn() {
+
+    // const [showAuth, setShowAuth] = useState(true);
+    // const handleClose = () => setShowAuth(false)
 
     const [toggleAuth, setToggle] = useState(false);
     const handleToggle = () => setToggle(value => !value)
-
-    // if (!showAuth) {
-    //     return (<Landing />)
-    // }
 
 
     return (
